@@ -193,8 +193,8 @@ def test_srl_run(epoch, actor, train_data, device):
         one = torch.ones_like(action_nxt_prob)
         prob = action_nxt_prob.clone()
 
-        action_nxt_prob = torch.where(action_nxt_prob >= 0.4, one, action_nxt_prob)
-        action_nxt_prob = torch.where(action_nxt_prob < 0.4, zero, action_nxt_prob)
+        action_nxt_prob = torch.where(action_nxt_prob >= 0.5, one, action_nxt_prob)
+        action_nxt_prob = torch.where(action_nxt_prob < 0.5, zero, action_nxt_prob)
 
         idx = torch.argmax(mask_nxt, 1)
         idx[idx == 0] = args.length
