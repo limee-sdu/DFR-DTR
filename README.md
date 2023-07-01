@@ -15,6 +15,7 @@ Although de-identified, the datasets described herein contain detailed informati
 ### eICU dataset
 The eICU Collaborative Research Database contains detailed information regarding the clinical care of ICU patients, so it must be treated with appropriate care and respect. Researchers seeking to use the database must formally request access. Details are shown on [the eICU website](https://eicu-crd.mit.edu/).
 
+Then put the data into a new folder `data`.
 ## Preprocessing
 Here we give the source code of the preprocessing for eICU dataset.
 
